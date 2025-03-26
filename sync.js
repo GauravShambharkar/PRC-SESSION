@@ -4,8 +4,6 @@
 // {
 //           sum += a[i]
 
-const { default: axios, Axios } = require("axios");
-
 // }
 // console.log(sum);
 
