@@ -2,10 +2,8 @@
 // var sum = 0
 // for(let i = 0; i<a.length; i++)
 //           sum += a[i]
-
-const { default: axios, Axios } = require("axios");
-
 // }
+
 // console.log(sum);
 
 // ***********************************
