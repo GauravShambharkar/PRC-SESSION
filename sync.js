@@ -1,7 +1,6 @@
 // const a  = [2,3,1]
 // var sum = 0
 // for(let i = 0; i<a.length; i++)
-// {
 //           sum += a[i]
 
 const { default: axios, Axios } = require("axios");
@@ -442,11 +441,11 @@ const { default: axios, Axios } = require("axios");
 
 // console.log(show.num1, show.num2);
 
-// const array = [1,21,33,44,5]
+// const arr = [1,21,33,44,5]
 // var add  = []
-// for( var i = array.length -1; i >= 0; i--){
+// for( var i = arr.length -1; i >= 0; i--){
 
-//     add += array[i]  + ', '
+//     add += arr[i]  + ', '
 // }
 
 // console.log(add);
@@ -564,9 +563,9 @@ const { default: axios, Axios } = require("axios");
 
 // p.then(callback)
 
-// const array = [2,1,3,'gv',34]
+// const arr = [2,1,3,'gv',34]
 
-// array.forEach((item,index)=>{
+// arr.forEach((item,index)=>{
 
 //     return item === String ? console.log(item) : null
 
@@ -646,7 +645,7 @@ const { default: axios, Axios } = require("axios");
 
 // **********************************************
 
-// const array = [
+// const arr = [
 //   {
 //     name: "Rahul",
 //     age: 22,
@@ -721,11 +720,11 @@ const { default: axios, Axios } = require("axios");
 // //   }
 // // });
 
-// for (let i = 0; i < array.length; i++) {
-//   // const element = array[i];
+// for (let i = 0; i < arr.length; i++) {
+//   // const element = arr[i];
 //   // console.log(element);
-//   if (array[i].address[0].city == array[i].address[0].state) {
-//     console.log(array[i]);
+//   if (arr[i].address[0].city == arr[i].address[0].state) {
+//     console.log(arr[i]);
 //   }
 // }
 
@@ -800,3 +799,15 @@ const { default: axios, Axios } = require("axios");
 
 // console.log(store);
 
+const data = [
+  { name: "gaurav", age: 24, proffesion: "graduate", married: 28 },
+  { name: "joe", age: 24, proffesion: "graduate", married: 30 },
+  { name: "doe", age: 20, proffesion: "undergraduate", married: 30 },
+  { name: "murphy", age: 19, proffesion: "student", married: 20 },
+];
+
+
+const unique = data.map((item) => item.married);
+const foundUniqu = [...new Set(unique)] 
+
+console.log(foundUniqu);
